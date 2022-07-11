@@ -205,6 +205,7 @@ header .tablet {
 .comment .swiper {
   width: 100%;
   padding: 2em;
+  cursor: pointer;
 }
 .comment .swiper-wrapper .swiper-slide {
   background-color: var(--light-grey);
