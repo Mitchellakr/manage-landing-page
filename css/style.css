@@ -190,6 +190,10 @@ header .tablet {
 }
 
 .comment {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
   text-align: center;
   padding-bottom: 2em;
 }
@@ -198,26 +202,23 @@ header .tablet {
   font-size: 2em;
   color: var(--dark-blue);
 }
-.comment .users {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2em;
-  margin: 0 1em;
+.comment .swiper {
+  width: 100%;
+  padding: 2em;
 }
-.comment .users .user-card {
+.comment .swiper-wrapper .swiper-slide {
   background-color: var(--light-grey);
   padding: 0.5em;
-  padding-bottom: 2em;
-  margin-bottom: 2em;
+  height: 250px;
 }
-.comment .users .user-card img {
+.comment .swiper-wrapper .swiper-slide img {
   width: 40px;
   margin-top: -4em;
 }
-.comment .users .user-card h4 {
+.comment .swiper-wrapper .swiper-slide h4 {
   padding: 1em 0;
 }
-.comment .users .user-card p {
+.comment .swiper-wrapper .swiper-slide p {
   line-height: 1.3;
   color: var(--grey-blue);
 }
@@ -344,11 +345,9 @@ footer {
     opacity: 0;
     transition: all 0.5s ease-in-out;
   }
-
   header .container .header-section .header-cta {
     display: none;
   }
-
   .navopen {
     opacity: 1;
   }
@@ -362,7 +361,6 @@ footer {
   .hero-section .container .hero-content .hero-left {
     order: 1;
   }
-
   footer .container .footer-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -382,7 +380,6 @@ footer {
   .second-section .container .info .right > div > .pair {
     border-radius: 50px;
   }
-
   .top-footer .container .top-footer-content {
     display: flex;
     flex-direction: column;
@@ -391,14 +388,6 @@ footer {
     justify-content: center;
     align-items: center;
   }
-
-  .comment .users {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1em;
-    text-align: center;
-  }
-
   .second-section .container .info .left-info {
     text-align: center;
   }

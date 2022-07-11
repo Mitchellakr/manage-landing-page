@@ -225,6 +225,10 @@ header {
 // this is the comment section
 
 .comment {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
     text-align: center;
     padding-bottom: 2em;
 
@@ -234,17 +238,19 @@ header {
         color: var(--dark-blue);
     }
 
-    .users {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2em;
-        margin: 0 1em;
+    .swiper {
+        width: 100%;
+        padding: 2em;
+    }
 
-        .user-card {
+
+    .swiper-wrapper {
+        // height: 100%;
+
+        .swiper-slide {
             background-color: var(--light-grey);
             padding: .5em;
-            padding-bottom: 2em;
-            margin-bottom: 2em;
+            height: 250px;
 
 
             img {
@@ -468,13 +474,6 @@ footer {
         text-align: center;
         justify-content: center;
         align-items: center;
-    }
-
-    .comment .users {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 1em;
-        text-align: center;
     }
 
     .second-section .container .info .left-info {
